@@ -2,7 +2,7 @@ from dotflow import action
 
 from bs4 import BeautifulSoup  # type: ignore
 
-from examples.etl_flow.book import Book
+from book import Book
 
 
 @action

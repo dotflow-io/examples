@@ -5,9 +5,9 @@ import sys
 from dotflow import DotFlow, Config
 from dotflow.storage import StorageFile
 
-from examples.etl_flow.tasks.extract import extract
-from examples.etl_flow.tasks.transform import Transform
-from examples.etl_flow.tasks.load import load
+from tasks.extract import extract
+from tasks.transform import Transform
+from tasks.load import load
 
 
 def main():
