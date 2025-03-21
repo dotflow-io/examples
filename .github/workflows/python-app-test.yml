@@ -1,11 +1,11 @@
-name: 📦 Mini Flow
+name: ❤️️ Test
 
 on:
-  schedule:
-    - cron:  '0 0 * * *'
-
   push:
     branches: [ "master" ]
+
+permissions:
+  contents: read
 
 jobs:
   deployment:
@@ -24,13 +24,7 @@ jobs:
     - name: ⚙️ Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r ./etl_flow/requirements.txt --no-cache-dir
-
-    - name: ✅ Run Script with storage default
+        pip install pytest
+    - name: ❤️️ Test with PyTest
       run: |
-        python ./etl_flow/main.py
-
-    - name: ✅ Run Script with storage file
-      run: |
-        python ./etl_flow/main.py file
-
+        pytest
