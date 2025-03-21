@@ -29,3 +29,20 @@ Start with the basics [here](https://dotflow-io.github.io/dotflow/nav/getting-st
 |21| [workflow_with_callback_failure](https://github.com/dotflow-io/dotflow/blob/master/examples/workflow_with_callback_failure.py)           |
 |22| [workflow_with_callback_success](https://github.com/dotflow-io/dotflow/blob/master/examples/workflow_with_callback_success.py)           |
 |23| [workflow_with_retry](https://github.com/dotflow-io/dotflow/blob/master/examples/workflow_with_retry.py)                                 |
+
+## Commit Style
+
+- ⚙️ FEATURE
+- 📝 PEP8
+- 📌 ISSUE
+- 🪲 BUG
+- 📘 DOCS
+- 📦 PyPI
+- ❤️️ TEST
+- ⬆️ CI/CD
+- ⚠️ SECURITY
+
+## License
+![GitHub License](https://img.shields.io/github/license/dotflow-io/dotflow)
+
+This project is licensed under the terms of the MIT License.
