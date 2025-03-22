@@ -1,5 +1,27 @@
 # examples
 
+<div align="center">
+  <a aria-label="Serverless.com" href="https://dotflow.io">Website</a>
+  &nbsp;•&nbsp;
+  <a aria-label="Dotglow Documentation" href="
+dotflow-io.github.io/dotflow/">Documentation</a>
+  &nbsp;•&nbsp;
+  <a aria-label="Pypi" href="https://pypi.org/project/dotflow/">Pypi</a>
+</div>
+
+<br/>
+
+<div align="center">
+
+![](https://raw.githubusercontent.com/FernandoCelmer/dotflow/master/docs/assets/dotflow.gif)
+
+![GitHub Org's stars](https://img.shields.io/github/stars/dotflow-io?label=Dotflow&style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/dotflow-io/dotflow?style=flat-square)
+![PyPI](https://img.shields.io/pypi/v/dotflow?style=flat-square)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dotflow?style=flat-square)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/dotflow?style=flat-square)
+</div>
+
 Start with the basics [here](https://dotflow-io.github.io/dotflow/nav/getting-started/).
 
 ---
