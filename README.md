@@ -1,5 +1,3 @@
-# examples
-
 <div align="center">
   <a aria-label="Serverless.com" href="https://dotflow.io">Website</a>
   &nbsp;•&nbsp;
@@ -21,6 +19,8 @@ dotflow-io.github.io/dotflow/">Documentation</a>
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dotflow?style=flat-square)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/dotflow?style=flat-square)
 </div>
+
+# Dotflow Examples
 
 Start with the basics [here](https://dotflow-io.github.io/dotflow/nav/getting-started/).
 
