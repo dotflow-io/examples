@@ -4,13 +4,13 @@ from dotflow import DotFlow, action
 from dotflow.core.types.status import TaskStatus
 
 
-def callback(content):  # HERE
-    assert content
-    assert content.current_context.storage == "ok"
-    assert content.status is TaskStatus.COMPLETED
+def callback(task):  # HERE
+    assert task
+    assert task.current_context.storage == "ok"
+    assert task.status is TaskStatus.COMPLETED
 
-    print(content.task_id, content.status, content.current_context.storage)
-    print(content.__dict__)
+    print(task.task_id, task.status, task.current_context.storage)
+    print(task.__dict__)
 
 
 @action

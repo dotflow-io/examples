@@ -6,22 +6,22 @@ from dotflow import DotFlow, Config
 from dotflow.storage import StorageFile
 
 from tasks.extract import extract
-from tasks.transform import Transform
 from tasks.load import load
+from tasks.transform import Transform
 
 
 def main():
-    url = "https://pythonfluente.com"
-
     workflow = DotFlow()
 
     if len(sys.argv) == 2 and sys.argv[1] == "file":
         config = Config(storage=StorageFile())
         workflow = DotFlow(config=config)
 
-    workflow.task.add(step=extract, initial_context=url)
-    workflow.task.add(step=Transform)
-    workflow.task.add(step=load)
+    workflow.task.add(
+        step=[extract, Transform, load],
+        initial_context="https://pythonfluente.com"
+    )
+
     workflow.start()
 
     return workflow
