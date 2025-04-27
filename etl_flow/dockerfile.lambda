@@ -1,0 +1,13 @@
+FROM public.ecr.aws/lambda/python:3.12
+
+WORKDIR /var/task
+
+COPY . .
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+CMD ["main.lambda_handler"]
+
+# docker build -t dotflow --file dockerfile.lambda .
+# docker run -p 9000:8080 dotflow
+# curl -XPOST "http://localhost:9000/2015-03-31/functions/function/invocations" -d '{}'

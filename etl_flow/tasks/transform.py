@@ -1,8 +1,13 @@
 from dotflow import action
 
-from bs4 import BeautifulSoup  # type: ignore
+from bs4 import BeautifulSoup
+from pydantic import BaseModel
 
-from book import Book
+
+class Book(BaseModel):
+
+    title: str
+    author: str
 
 
 @action

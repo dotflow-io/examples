@@ -1,0 +1,14 @@
+FROM fedora:latest
+
+RUN dnf install -y python3 python3-pip
+
+WORKDIR /app
+
+COPY . .
+
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+CMD ["python3", "main.py"]
+
+# docker build -t dotflow --file dockerfile.fedora .
+# docker run -t dotflow
