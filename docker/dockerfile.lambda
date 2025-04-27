@@ -1,0 +1,7 @@
+FROM public.ecr.aws/lambda/python:3.12
+
+COPY ../step_with_groups.py .
+
+RUN pip install dotflow==0.12.0.dev1 --no-cache-dir
+
+CMD ["step_with_groups.lambda_handler"]

@@ -30,5 +30,14 @@ def main():
     return workflow
 
 
+def lambda_handler(event, context):
+    workflow = main()
+
+    return {
+        "workflow_id": str(workflow.workflow_id),
+        "tasks": [{task.task_id: task.status} for task in workflow.task.queue],
+    }
+
+
 if __name__ == "__main__":
     main()
