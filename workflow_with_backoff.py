@@ -8,7 +8,7 @@ class TestException(Exception):
         super(TestException, self).__init__("Unknown")
 
 
-@action(retry=5)  # HERE
+@action(retry=5, backoff=True)  # HERE
 def simple_step():
     raise TestException()
 
@@ -16,12 +16,12 @@ def simple_step():
 @action
 class SimpleStepX:
 
-    @action(retry=5)  # HERE
+    @action(retry=5, backoff=True)  # HERE
     def run(self):
         raise TestException()
 
 
-@action(retry=3)  # HERE
+@action(retry=5, backoff=True)  # HERE
 class SimpleStepY:
 
     @action
