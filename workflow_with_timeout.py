@@ -13,7 +13,7 @@ def simple_step():
 @action
 class SimpleStepX:
 
-    @action(timeout=5)  # HERE
+    @action(timeout=3)  # HERE
     def run(self):
         sleep(5)
 
