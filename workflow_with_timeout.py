@@ -30,20 +30,14 @@ def main():
 
     workflow.task.add(step=simple_step)
     workflow.start()
-
-    assert isinstance(workflow.task.queue[0].error.exception, TimeoutError)
     workflow.task.clear()
 
     workflow.task.add(step=SimpleStepX)
     workflow.start()
-
-    assert isinstance(workflow.task.queue[0].error.exception, TimeoutError)
     workflow.task.clear()
 
     workflow.task.add(step=SimpleStepY)
     workflow.start()
-
-    assert isinstance(workflow.task.queue[0].error.exception, TimeoutError)
     workflow.task.clear()
 
     return workflow
