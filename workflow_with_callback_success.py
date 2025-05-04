@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from dotflow import DotFlow, action
-from dotflow.core.types.status import TaskStatus
+from dotflow.core.types.status import TypeStatus
 
 
 def callback(tasks):  # HERE
@@ -9,7 +9,7 @@ def callback(tasks):  # HERE
     assert len(tasks)
 
     for task in tasks:
-        assert task.status is TaskStatus.COMPLETED
+        assert task.status is TypeStatus.COMPLETED
         print(task.task_id, task.status, task.current_context.storage)
 
 
