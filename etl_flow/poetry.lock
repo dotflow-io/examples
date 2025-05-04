@@ -158,17 +158,18 @@ files = [
 
 [[package]]
 name = "dotflow"
-version = "0.12.0.dev2"
+version = "0.13.0.dev1"
 description = "🎲 Dotflow turns an idea into flow!"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "dotflow-0.12.0.dev2-py3-none-any.whl", hash = "sha256:aef51d7bfd1522000f389c1b674e993c79da0a90edc15ff1a5cce873e61b2a91"},
-    {file = "dotflow-0.12.0.dev2.tar.gz", hash = "sha256:1406aff7b5e203eccb14ce884667545cc95d0b782424d9b390ba53b5fe9d3a92"},
+    {file = "dotflow-0.13.0.dev1-py3-none-any.whl", hash = "sha256:cf8c876d49391f45ab4d7d0ece8122769dbd69917b00e7246f7c00e3e67f4ba7"},
+    {file = "dotflow-0.13.0.dev1.tar.gz", hash = "sha256:e3009e7df57faf0fe6832ba64d3c965683eb968aec387099890650cf048431ad"},
 ]
 
 [package.dependencies]
 pydantic = "*"
+requests = "*"
 rich = "*"
 typing-extensions = "*"
 
@@ -508,4 +509,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "cb6f6ef5b1476c994f3af21765a65dbce7bc3c1590a6336a9484f0b687a51064"
+content-hash = "2d7ea513a21c4c50e030865e3e0d4999e1bcd1c907ab49bc015b6ab4b7f57dfd"
