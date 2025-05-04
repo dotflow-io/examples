@@ -5,6 +5,7 @@ import os
 from dotenv import load_dotenv
 
 from dotflow import Config, DotFlow, action
+from dotflow.types import TypeStatus
 from dotflow.notify import NotifyTelegram
 
 
@@ -18,7 +19,8 @@ def main():
 
     notify = NotifyTelegram(
         token=os.getenv("TOKEN"),
-        chat_id=os.getenv("CHAT_ID")
+        chat_id=os.getenv("CHAT_ID"),
+        notification_type=TypeStatus.FAILED,
     )
 
     workflow = DotFlow(config=Config(notify=notify))
