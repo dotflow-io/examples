@@ -25,7 +25,7 @@ def main():
     load_dotenv()
 
     notify = NotifyTelegram(
-        token=os.getenv("TOKEN"),
+        token=os.getenv("BOT_TOKEN"),
         chat_id=os.getenv("CHAT_ID"),
         notification_type=TypeStatus.FAILED
     )
