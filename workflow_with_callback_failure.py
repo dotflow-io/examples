@@ -22,7 +22,7 @@ def main():
     workflow = DotFlow()
 
     workflow.task.add(step=simple_step)
-    workflow.start(failure=callback)
+    workflow.start(on_failure=callback)
 
     return workflow
 
