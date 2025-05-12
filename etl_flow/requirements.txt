@@ -19,3 +19,4 @@ rich==13.9.4
 soupsieve==2.6
 typing-extensions==4.12.2
 urllib3==2.3.0
+python-dotenv=1.1.0
