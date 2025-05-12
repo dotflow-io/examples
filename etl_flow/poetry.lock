@@ -158,13 +158,13 @@ files = [
 
 [[package]]
 name = "dotflow"
-version = "0.13.0.dev1"
+version = "0.13.0.dev2"
 description = "🎲 Dotflow turns an idea into flow!"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "dotflow-0.13.0.dev1-py3-none-any.whl", hash = "sha256:cf8c876d49391f45ab4d7d0ece8122769dbd69917b00e7246f7c00e3e67f4ba7"},
-    {file = "dotflow-0.13.0.dev1.tar.gz", hash = "sha256:e3009e7df57faf0fe6832ba64d3c965683eb968aec387099890650cf048431ad"},
+    {file = "dotflow-0.13.0.dev2-py3-none-any.whl", hash = "sha256:cf8c876d49391f45ab4d7d0ece8122769dbd69917b00e7246f7c00e3e67f4ba7"},
+    {file = "dotflow-0.13.0.dev2.tar.gz", hash = "sha256:e3009e7df57faf0fe6832ba64d3c965683eb968aec387099890650cf048431ad"},
 ]
 
 [package.dependencies]
