@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "examples"
+version = "0.1.0"
+description = ""
+authors = ["FernandoCelmer <email@fernandocelmer.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+dotflow = "0.13.0.dev2"
+dotflow-mongodb = "^0.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
