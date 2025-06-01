@@ -5,7 +5,7 @@ import os
 from dotenv import load_dotenv
 
 from dotflow import DotFlow, Config
-from dotflow.notify import NotifyTelegram
+from dotflow.providers import NotifyTelegram
 
 from tasks.extract import extract
 from tasks.load import load
