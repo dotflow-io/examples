@@ -18,6 +18,8 @@ dotflow-io.github.io/dotflow/">Documentation</a>
 ![PyPI](https://img.shields.io/pypi/v/dotflow?style=flat-square)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/dotflow?style=flat-square)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/dotflow?style=flat-square)
+[![❤️ Test Flow](https://github.com/dotflow-io/examples/actions/workflows/python-app-flow.yml/badge.svg)](https://github.com/dotflow-io/examples/actions/workflows/python-app-flow.yml)
+[![⚙️ ETL Flow](https://github.com/dotflow-io/examples/actions/workflows/python-etl-flow.yml/badge.svg)](https://github.com/dotflow-io/examples/actions/workflows/python-etl-flow.yml)
 </div>
 
 # Dotflow Examples
