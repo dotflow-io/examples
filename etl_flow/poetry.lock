@@ -41,8 +41,12 @@ version = "2025.8.3"
 description = "Python package for providing Mozilla's CA Bundle."
 optional = false
 <<<<<<< HEAD
+<<<<<<< HEAD
 python-versions = ">=3.6"
 groups = ["main"]
+=======
+python-versions = ">=3.7"
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
 python-versions = ">=3.7"
 >>>>>>> 3b9856c (⚙️ FEATURE: Updated)
@@ -175,8 +179,13 @@ python-versions = ">=3.9"
 groups = ["main"]
 files = [
 <<<<<<< HEAD
+<<<<<<< HEAD
     {file = "dotflow-0.13.0.dev2-py3-none-any.whl", hash = "sha256:f6056db10efc57a99fc1112a59a679a833c195941c43bc60b4dd00c38c21428b"},
     {file = "dotflow-0.13.0.dev2.tar.gz", hash = "sha256:7a35951d80c668d515e441e662357b4a99d40b328bbef1c34f56a8663b468825"},
+=======
+    {file = "dotflow-0.13.0-py3-none-any.whl", hash = "sha256:b10c2a8031f09a7d58c019fdad8be3e2592f83a67a0cda6b7d83f3cc7ed3a1f3"},
+    {file = "dotflow-0.13.0.tar.gz", hash = "sha256:c543d15b239a156636786bec5ab432a9785dd376f8fbaa7aa9560f7375979e45"},
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
     {file = "dotflow-0.13.0-py3-none-any.whl", hash = "sha256:b10c2a8031f09a7d58c019fdad8be3e2592f83a67a0cda6b7d83f3cc7ed3a1f3"},
     {file = "dotflow-0.13.0.tar.gz", hash = "sha256:c543d15b239a156636786bec5ab432a9785dd376f8fbaa7aa9560f7375979e45"},
@@ -274,8 +283,12 @@ version = "1.6.0"
 description = "plugin and hook calling mechanisms for python"
 optional = false
 <<<<<<< HEAD
+<<<<<<< HEAD
 python-versions = ">=3.8"
 groups = ["main"]
+=======
+python-versions = ">=3.9"
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
 python-versions = ">=3.9"
 >>>>>>> 3b9856c (⚙️ FEATURE: Updated)
@@ -294,8 +307,12 @@ version = "2.11.7"
 description = "Data validation using Python type hints"
 optional = false
 <<<<<<< HEAD
+<<<<<<< HEAD
 python-versions = ">=3.8"
 groups = ["main"]
+=======
+python-versions = ">=3.9"
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
 python-versions = ">=3.9"
 >>>>>>> 3b9856c (⚙️ FEATURE: Updated)
@@ -320,8 +337,12 @@ version = "2.33.2"
 description = "Core functionality for Pydantic validation and serialization"
 optional = false
 <<<<<<< HEAD
+<<<<<<< HEAD
 python-versions = ">=3.8"
 groups = ["main"]
+=======
+python-versions = ">=3.9"
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
 python-versions = ">=3.9"
 >>>>>>> 3b9856c (⚙️ FEATURE: Updated)
@@ -451,8 +472,12 @@ version = "8.4.1"
 description = "pytest: simple powerful testing with Python"
 optional = false
 <<<<<<< HEAD
+<<<<<<< HEAD
 python-versions = ">=3.8"
 groups = ["main"]
+=======
+python-versions = ">=3.9"
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
 python-versions = ">=3.9"
 >>>>>>> 3b9856c (⚙️ FEATURE: Updated)
@@ -545,8 +570,12 @@ version = "4.14.1"
 description = "Backported and Experimental Type Hints for Python 3.9+"
 optional = false
 <<<<<<< HEAD
+<<<<<<< HEAD
 python-versions = ">=3.8"
 groups = ["main"]
+=======
+python-versions = ">=3.9"
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
 python-versions = ">=3.9"
 >>>>>>> 3b9856c (⚙️ FEATURE: Updated)
@@ -559,6 +588,7 @@ files = [
 name = "typing-inspection"
 version = "0.4.1"
 description = "Runtime typing introspection tools"
+<<<<<<< HEAD
 optional = false
 python-versions = ">=3.9"
 files = [
@@ -577,6 +607,25 @@ optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
+=======
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "typing_inspection-0.4.1-py3-none-any.whl", hash = "sha256:389055682238f53b04f7badcb49b989835495a96700ced5dab2d8feae4b26f51"},
+    {file = "typing_inspection-0.4.1.tar.gz", hash = "sha256:6ae134cc0203c33377d43188d4064e9b357dba58cff3185f22924610e70a9d28"},
+]
+
+[package.dependencies]
+typing-extensions = ">=4.12.0"
+
+[[package]]
+name = "urllib3"
+version = "2.5.0"
+description = "HTTP library with thread-safe connection pooling, file post, and more."
+optional = false
+python-versions = ">=3.9"
+files = [
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
     {file = "urllib3-2.5.0-py3-none-any.whl", hash = "sha256:e6b01673c0fa6a13e374b50871808eb3bf7046c4b125b216f6bf1cc604cff0dc"},
     {file = "urllib3-2.5.0.tar.gz", hash = "sha256:3fc47733c7e419d4bc3f6b3dc2b4f890bb743906a30d56ba4a5bfa4bbff92760"},
 ]
@@ -591,7 +640,11 @@ zstd = ["zstandard (>=0.18.0)"]
 lock-version = "2.1"
 python-versions = "^3.12"
 <<<<<<< HEAD
+<<<<<<< HEAD
 content-hash = "bc65107e26e4c665431b0833aa6c6bc207481b5850a69b9177837d07aa81019b"
+=======
+content-hash = "cbaa1afae20bae1731375c3c700c0051f620d56cb05f92a25c58b3bca511fdd3"
+>>>>>>> 3b9856c (⚙️ FEATURE: Updated)
 =======
 content-hash = "cbaa1afae20bae1731375c3c700c0051f620d56cb05f92a25c58b3bca511fdd3"
 >>>>>>> 3b9856c (⚙️ FEATURE: Updated)
