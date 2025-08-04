@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 from dotflow.types import TypeStatus
 from dotflow import DotFlow, Config
-from dotflow.providers.notify_telegram import NotifyTelegram
+from dotflow.providers import NotifyTelegram
 
 from tasks.extract import extract
 from tasks.load import load
