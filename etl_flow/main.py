@@ -4,6 +4,7 @@ import os
 
 from dotenv import load_dotenv
 
+from dotflow.types import TypeStatus
 from dotflow import DotFlow, Config
 from dotflow.providers import NotifyTelegram
 
@@ -22,7 +23,8 @@ def main():
     if bot_token and chat_id:
         notify = NotifyTelegram(
             token=bot_token,
-            chat_id=chat_id
+            chat_id=chat_id,
+            notification_type=TypeStatus.COMPLETED,
         )
 
         workflow = DotFlow(
