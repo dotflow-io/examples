@@ -12,7 +12,6 @@ def simple_step():
 
 @action
 class SimpleStepX:
-
     @action(timeout=3)  # HERE
     def run(self):
         sleep(5)
@@ -20,7 +19,6 @@ class SimpleStepX:
 
 @action(timeout=3)  # HERE
 class SimpleStepY:
-
     def __init__(self):
         sleep(5)
 

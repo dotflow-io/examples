@@ -8,7 +8,9 @@ from cli_with_path import main as cli_with_path
 from simple_class_workflow import main as simple_class_workflow
 from simple_cli import main as simple_cli
 from simple_function_workflow import main as simple_function_workflow
-from simple_function_workflow_with_error import main as simple_function_workflow_with_error
+from simple_function_workflow_with_error import (
+    main as simple_function_workflow_with_error,
+)
 from step_class_result_context import main as step_class_result_context
 from step_class_result_storage import main as step_class_result_storage
 from step_class_result_task import main as step_class_result_task

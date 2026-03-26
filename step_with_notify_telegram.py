@@ -27,12 +27,10 @@ def main():
     notify = NotifyTelegram(
         token=os.getenv("BOT_TOKEN"),
         chat_id=os.getenv("CHAT_ID"),
-        notification_type=TypeStatus.FAILED
+        notification_type=TypeStatus.FAILED,
     )
 
-    workflow = DotFlow(
-        config=Config(notify=notify)
-    )
+    workflow = DotFlow(config=Config(notify=notify))
 
     workflow.task.add(step=simple_step, initial_context={"foo": "bar"})
     workflow.task.add(step=simple_step_raise)

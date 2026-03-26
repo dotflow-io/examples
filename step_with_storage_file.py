@@ -10,9 +10,7 @@ def simple_step():
 
 
 def main():
-    config = Config(
-        storage=StorageFile(path=".output")
-    )
+    config = Config(storage=StorageFile(path=".output"))
     workflow = DotFlow(config=config)
 
     workflow.task.add(step=simple_step)

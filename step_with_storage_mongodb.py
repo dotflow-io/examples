@@ -10,9 +10,7 @@ def simple_step():
 
 
 def main():
-    config = Config(
-        storage=StorageMongoDB()
-    )
+    config = Config(storage=StorageMongoDB())
     workflow = DotFlow(config=config)
 
     workflow.task.add(step=simple_step)

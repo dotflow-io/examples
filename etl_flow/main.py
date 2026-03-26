@@ -27,13 +27,10 @@ def main():
             notification_type=TypeStatus.COMPLETED,
         )
 
-        workflow = DotFlow(
-            config=Config(notify=notify)
-        )
+        workflow = DotFlow(config=Config(notify=notify))
 
     workflow.task.add(
-        step=[extract, Transform, load],
-        initial_context="https://pythonfluente.com"
+        step=[extract, Transform, load], initial_context="https://pythonfluente.com"
     )
 
     workflow.start()
