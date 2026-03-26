@@ -15,7 +15,6 @@ def simple_step():
 
 @action
 class SimpleStepX:
-
     @action(retry=5)  # HERE
     def run(self):
         raise TestException()
@@ -23,7 +22,6 @@ class SimpleStepX:
 
 @action(retry=3)  # HERE
 class SimpleStepY:
-
     @action
     def run(self):
         raise TestException()
