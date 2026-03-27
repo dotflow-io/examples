@@ -149,14 +149,14 @@ wmi = ["wmi (>=1.5.1)"]
 
 [[package]]
 name = "dotflow"
-version = "0.13.1"
+version = "0.13.2.dev2"
 description = "🎲 Dotflow turns an idea into flow!"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "dotflow-0.13.1-py3-none-any.whl", hash = "sha256:8383235a39a9aa65026439c8ad8ffc7e41275820bd504f85b6b84f8778fb82ff"},
-    {file = "dotflow-0.13.1.tar.gz", hash = "sha256:294ffd47242d41097e84b78dedd3dfc9544a8c7aae1c1d023354bf5ff9f06640"},
+    {file = "dotflow-0.13.2.dev2-py3-none-any.whl", hash = "sha256:7db98869032d1a4e1e5d454d1ac79ba26492d129687aab6ad4b6a4a63b6c94ec"},
+    {file = "dotflow-0.13.2.dev2.tar.gz", hash = "sha256:47e7bbfd2ed1c5650c670b69a01ee4b0fca98ea7f0a65054603c173b0e40e517"},
 ]
 
 [package.dependencies]
@@ -554,4 +554,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "7d6bf76c647e42a3c5954a99e5e4acb32f5aa56bdb8d7053f1f2a05a9e18d785"
+content-hash = "4be4b0877da79e97b0a8119bb61b55189c678310865e6401902bf8a943da358c"

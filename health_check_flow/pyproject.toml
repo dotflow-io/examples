@@ -1,15 +1,16 @@
 [tool.poetry]
-name = "examples"
+name = "health-check-flow"
 version = "0.1.0"
-description = ""
+description = "Health Check Flow — parallel endpoint monitoring with dotflow"
 authors = ["FernandoCelmer <email@fernandocelmer.com>"]
 license = "MIT"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
 dotflow = "0.13.2.dev2"
-dotflow-mongodb = "^0.1.2"
+requests = "^2.32.3"
 
 
 [build-system]
