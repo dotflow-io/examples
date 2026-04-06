@@ -8,7 +8,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-dotflow = "0.13.2.dev2"
+dotflow = "0.14.0.dev1"
 dotflow-mongodb = "^0.1.2"
 
 
