@@ -58,6 +58,12 @@ Start with the basics [here](https://dotflow-io.github.io/dotflow/nav/getting-st
 | [workflow_parallel_mode](https://github.com/dotflow-io/examples/blob/master/workflow_parallel_mode.py)                           | `python workflow_parallel_mode.py`                                                         |
 | [workflow_sequential_group_mode](https://github.com/dotflow-io/examples/blob/master/workflow_sequential_group_mode.py)           | `python workflow_sequential_group_mode.py`                                                 |
 | [workflow_sequential_mode](https://github.com/dotflow-io/examples/blob/master/workflow_sequential_mode.py)                       | `python workflow_sequential_mode.py`                                                       |
+| [workflow_with_async](https://github.com/dotflow-io/examples/blob/master/workflow_with_async.py)                                 | `python workflow_with_async.py`                                                            |
+| [workflow_with_checkpoint](https://github.com/dotflow-io/examples/blob/master/workflow_with_checkpoint.py)                       | `python workflow_with_checkpoint.py`                                                       |
+| [workflow_with_error_handling](https://github.com/dotflow-io/examples/blob/master/workflow_with_error_handling.py)               | `python workflow_with_error_handling.py`                                                   |
+| [workflow_with_schedule](https://github.com/dotflow-io/examples/blob/master/workflow_with_schedule.py)                           | `python workflow_with_schedule.py`                                                         |
+| [workflow_with_schedule_overlap](https://github.com/dotflow-io/examples/blob/master/workflow_with_schedule_overlap.py)           | `python workflow_with_schedule_overlap.py`                                                 |
+| [workflow_with_schedule_resume](https://github.com/dotflow-io/examples/blob/master/workflow_with_schedule_resume.py)             | `python workflow_with_schedule_resume.py`                                                  |
 
 
 ## Commit Style
