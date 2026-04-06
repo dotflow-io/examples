@@ -15,7 +15,6 @@ def simple_step():
 
 @action
 class SimpleStepX:
-
     @action(retry=5, backoff=True)  # HERE
     def run(self):
         raise TestException()
@@ -23,7 +22,6 @@ class SimpleStepX:
 
 @action(retry=5, backoff=True)  # HERE
 class SimpleStepY:
-
     @action
     def run(self):
         raise TestException()
@@ -35,19 +33,19 @@ def main():
     workflow.task.add(step=simple_step)
     workflow.start()
 
-    assert isinstance(workflow.task.queue[0].error.exception, TestException)
+    assert workflow.task.queue[0].errors[-1].exception == "TestException"
     workflow.task.clear()
 
     workflow.task.add(step=SimpleStepX)
     workflow.start()
 
-    assert isinstance(workflow.task.queue[0].error.exception, TestException)
+    assert workflow.task.queue[0].errors[-1].exception == "TestException"
     workflow.task.clear()
 
     workflow.task.add(step=SimpleStepY)
     workflow.start()
 
-    assert isinstance(workflow.task.queue[0].error.exception, TestException)
+    assert workflow.task.queue[0].errors[-1].exception == "TestException"
     workflow.task.clear()
 
     return workflow

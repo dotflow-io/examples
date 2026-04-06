@@ -5,7 +5,6 @@ from dotflow import DotFlow, action
 
 @action(retry=5)
 class Step:
-
     def __init__(self, initial_context):
         print(initial_context.storage, "__init__")
         assert initial_context.storage
