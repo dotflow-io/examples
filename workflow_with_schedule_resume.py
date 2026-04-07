@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from uuid import uuid4
+
 from dotflow import Config, DotFlow, action
 from dotflow.providers import SchedulerCron, StorageFile
 
@@ -25,7 +27,7 @@ def main():
         scheduler=SchedulerCron(cron="0 6 * * *", overlap="skip"),
     )
 
-    workflow = DotFlow(config=config, workflow_id="etl-daily")
+    workflow = DotFlow(config=config, workflow_id=uuid4())
     workflow.task.add(step=extract)
     workflow.task.add(step=transform)
     workflow.task.add(step=load)

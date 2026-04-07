@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from uuid import uuid4
+
 from dotflow import Config, DotFlow, action
 from dotflow.providers import StorageFile
 
@@ -22,7 +24,7 @@ def step_three(previous_context):
 def main():
     config = Config(storage=StorageFile())
 
-    workflow = DotFlow(config=config, workflow_id="my-pipeline")
+    workflow = DotFlow(config=config, workflow_id=uuid4())
     workflow.task.add(step=step_one)
     workflow.task.add(step=step_two)
     workflow.task.add(step=step_three)
