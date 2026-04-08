@@ -270,14 +270,14 @@ rich = "*"
 
 [[package]]
 name = "dotflow"
-version = "0.14.0.dev1"
+version = "0.14.1.dev1"
 description = "🎲 Dotflow turns an idea into flow! Lightweight Python library for execution pipelines with retry, parallel, cron and async support."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "dotflow-0.14.0.dev1-py3-none-any.whl", hash = "sha256:20c64f6b0aae79da1716a6c62abc54b1f464a6d55706ba69c54a78b01392a3a5"},
-    {file = "dotflow-0.14.0.dev1.tar.gz", hash = "sha256:f29b9117830c686ddbcf23036a6d1818b8cd5037599dd963f402dcb711fa39e6"},
+    {file = "dotflow-0.14.1.dev1-py3-none-any.whl", hash = "sha256:d4ce1f81cf6de684f131cef592c0413784219e5d3cdae366739c374bbf8141a5"},
+    {file = "dotflow-0.14.1.dev1.tar.gz", hash = "sha256:3fcddb32d55f561b7c7d528014bc7e41408dabab54d459019622eb759353cd3b"},
 ]
 
 [package.dependencies]
@@ -290,7 +290,6 @@ typing-extensions = "*"
 [package.extras]
 aws = ["boto3"]
 gcp = ["google-cloud-storage"]
-mongodb = ["dotflow-mongodb"]
 scheduler = ["croniter"]
 
 [[package]]
@@ -962,4 +961,4 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "7b5a214e05273d3a8c8284ce8d2d558bd445f5ce70525a0491932608c1bd0672"
+content-hash = "8be49309329dd367e49ed7180f473307e1eb544ca414edca94d118bbb2d638ce"
