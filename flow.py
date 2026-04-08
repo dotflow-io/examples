@@ -20,7 +20,6 @@ from step_with_initial_context import main as step_with_initial_context
 from step_with_many_contexts import main as step_with_many_contexts
 from step_with_previous_context import main as step_with_previous_context
 from step_with_storage_file import main as step_with_storage_file
-from step_with_storage_mongodb import main as step_with_storage_mongodb
 from workflow_background_mode import main as workflow_background_mode
 from workflow_keep_going_true import main as workflow_keep_going_true
 from workflow_parallel_mode import main as workflow_parallel_mode
@@ -53,7 +52,6 @@ def main():
     step_with_many_contexts()
     step_with_previous_context()
     step_with_storage_file()
-    step_with_storage_mongodb()
     workflow_background_mode()
     workflow_keep_going_true()
     workflow_parallel_mode()

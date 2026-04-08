@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 
 from dotflow import DotFlow, action, Config
-from dotflow.storage import StorageFile
+from dotflow.providers import StorageFile
 
 
 @action
