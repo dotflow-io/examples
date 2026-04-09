@@ -247,14 +247,14 @@ rich = "*"
 
 [[package]]
 name = "dotflow"
-version = "0.14.1.dev1"
+version = "0.15.0.dev3"
 description = "🎲 Dotflow turns an idea into flow! Lightweight Python library for execution pipelines with retry, parallel, cron and async support."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "dotflow-0.14.1.dev1-py3-none-any.whl", hash = "sha256:d4ce1f81cf6de684f131cef592c0413784219e5d3cdae366739c374bbf8141a5"},
-    {file = "dotflow-0.14.1.dev1.tar.gz", hash = "sha256:3fcddb32d55f561b7c7d528014bc7e41408dabab54d459019622eb759353cd3b"},
+    {file = "dotflow-0.15.0.dev3-py3-none-any.whl", hash = "sha256:3281ef4f5e9aa005dc4e47107cef7eba65820a7cc180d9e284ef58fe632d289b"},
+    {file = "dotflow-0.15.0.dev3.tar.gz", hash = "sha256:73d063ab047d05058b511debf1d06dca2d963c5a48fec7fb0eba2aaa273d3ff0"},
 ]
 
 [package.dependencies]
@@ -266,8 +266,13 @@ typing-extensions = "*"
 
 [package.extras]
 aws = ["boto3"]
+deploy-aws = ["boto3"]
+deploy-gcp = ["google-auth", "google-cloud-artifact-registry", "google-cloud-build", "google-cloud-run", "google-cloud-service-usage", "google-cloud-storage"]
+deploy-github = ["GitPython", "PyGithub"]
 gcp = ["google-cloud-storage"]
+otel = ["opentelemetry-api", "opentelemetry-sdk"]
 scheduler = ["croniter"]
+sentry = ["sentry-sdk"]
 
 [[package]]
 name = "idna"
@@ -850,4 +855,4 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "11226439510c122951b702a56679f2f0cdf7a3adfdf4eac6c1e7839b873c20fb"
+content-hash = "82fbf21a495488c9b19612a11e02de4a55417933c38a7c9fd8fd15062ce3c473"
