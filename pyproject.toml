@@ -5,10 +5,11 @@ description = ""
 authors = ["FernandoCelmer <email@fernandocelmer.com>"]
 license = "MIT"
 readme = "README.md"
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
-dotflow = "0.15.0.dev4"
+dotflow = {version = "0.15.0.dev6", allow-prereleases = true}
 
 
 [build-system]
