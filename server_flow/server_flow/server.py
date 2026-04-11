@@ -49,14 +49,15 @@ class ServerAPI(Server):
         )
 
     def create_task(self, task: Any) -> None:
-        data = task.result()
+        data = task.result(max=5_000_000)
+        data["id"] = data.pop("task_id", task.task_id)
         self._post(
             f"{self._base_url}/workflows/{task.workflow_id}/tasks",
             json=data,
         )
 
     def update_task(self, task: Any) -> None:
-        data = task.result()
+        data = task.result(max=5_000_000)
         self._patch(
             f"{self._base_url}/workflows/{task.workflow_id}/tasks/{task.task_id}",
             json=data,
