@@ -210,14 +210,14 @@ rich = "*"
 
 [[package]]
 name = "dotflow"
-version = "0.15.0.dev4"
+version = "0.15.0.dev6"
 description = "🎲 Dotflow turns an idea into flow! Lightweight Python library for execution pipelines with retry, parallel, cron and async support."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "dotflow-0.15.0.dev4-py3-none-any.whl", hash = "sha256:719590c473cbc21e45ceefbb9abfa76b56457b2fb6e02ce2d15fe5735e8ef1aa"},
-    {file = "dotflow-0.15.0.dev4.tar.gz", hash = "sha256:66b304fb397d0eb18816d01fd011624b41363f93f60cadd5765c591e6a174f4c"},
+    {file = "dotflow-0.15.0.dev6-py3-none-any.whl", hash = "sha256:827862ea86062e0814ea7f6566d74c36ecf202a2b5cf24d318dec6150db493af"},
+    {file = "dotflow-0.15.0.dev6.tar.gz", hash = "sha256:f91058d192f639ee8b8a555b8e2d85d84290d43f9a8eb3b24e4aa27f7ebd2c92"},
 ]
 
 [package.dependencies]
@@ -797,4 +797,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "8849598a21fb539c84fab627603c801358853b47e1f98a470fa930f040b0f443"
+content-hash = "1e63f3eda09ac2eae33b353de9c31f70ce7badfd6c6ff270a55bc227538b1519"
