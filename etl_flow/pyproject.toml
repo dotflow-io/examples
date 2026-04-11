@@ -15,7 +15,14 @@ dependencies = [
 dev = ["pytest"]
 
 [tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.32.3"
+beautifulsoup4 = "^4.13.3"
+pydantic = "^2.10.6"
 dotflow = {version = "0.15.0.dev7", allow-prereleases = true}
+pytest = "^8.3.5"
+python-dotenv = "^1.1.0"
+
 
 [build-system]
 requires = ["poetry-core"]
