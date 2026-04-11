@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Server Flow — custom server provider example with dotflow"
 requires-python = ">=3.12"
 dependencies = [
-    "dotflow==0.15.0.dev6",
+    "dotflow==0.15.0.dev7",
     "requests>=2.32.3",
     "httpx>=0.28.1",
     "python-dotenv>=1.1.0",
@@ -14,7 +14,7 @@ dependencies = [
 dev = ["pytest"]
 
 [tool.poetry.dependencies]
-dotflow = {version = "0.15.0.dev6", allow-prereleases = true}
+dotflow = {version = "0.15.0.dev7", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core"]
