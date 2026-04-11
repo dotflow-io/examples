@@ -32,5 +32,8 @@ jobs:
         cd etl_flow && python -m pytest tests/ -v
 
     - name: ✅ Run ETL Flow
+      env:
+        SERVER_BASE_URL: ${{ secrets.SERVER_BASE_URL }}
+        SERVER_USER_TOKEN: ${{ secrets.SERVER_USER_TOKEN }}
       run: |
         cd etl_flow && python -m etl_flow.workflow
