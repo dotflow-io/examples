@@ -1,0 +1,31 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: "server-flow — scheduled dotflow pipeline on AWS Lambda"
+
+Resources:
+  WorkflowFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      FunctionName: server-flow
+      Timeout: 900
+      MemorySize: 512
+      Events:
+        Schedule:
+          Type: Schedule
+          Properties:
+            Schedule: "cron(0 */5 * * ? *)"
+            Description: "Scheduled trigger for server-flow"
+            Enabled: true
+    Metadata:
+      DockerTag: latest
+      DockerContext: .
+      Dockerfile: Dockerfile
+
+Outputs:
+  FunctionArn:
+    Description: Lambda function ARN
+    Value: !GetAtt WorkflowFunction.Arn
+  ScheduleRule:
+    Description: EventBridge schedule rule
+    Value: "cron(0 */5 * * ? *)"
