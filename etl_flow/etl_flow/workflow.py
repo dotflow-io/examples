@@ -39,14 +39,8 @@ def main():
     )
     workflow.start()
 
-    return workflow
-
-
-def lambda_handler(event, context):
-    workflow = main()
     return workflow.result()
 
 
 if __name__ == "__main__":
-    workflow = main()
-    print(workflow.result())
+    print(main())
