@@ -7,9 +7,9 @@ from etl_flow.workflow import main
 
 def handler(event, context):
     """Invoked by EventBridge on a schedule."""
-    workflow = main()
+    result = main()
 
     return {
         "statusCode": 200,
-        "body": workflow.result()
+        "body": result
     }
