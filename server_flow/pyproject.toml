@@ -8,7 +8,7 @@ package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
-dotflow = {version = "0.15.0.dev6", allow-prereleases = true}
+dotflow = {version = "0.15.0.dev7", allow-prereleases = true}
 requests = "^2.32.3"
 httpx = "^0.28.1"
 python-dotenv = "^1.1.0"
