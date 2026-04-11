@@ -12,7 +12,7 @@ python = "^3.12"
 requests = "^2.32.3"
 beautifulsoup4 = "^4.13.3"
 pydantic = "^2.10.6"
-dotflow = "0.15.0.dev4"
+dotflow = {version = "0.15.0.dev6", allow-prereleases = true}
 pytest = "^8.3.5"
 python-dotenv = "^1.1.0"
 
