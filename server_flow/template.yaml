@@ -14,7 +14,7 @@ Resources:
         Schedule:
           Type: Schedule
           Properties:
-            Schedule: "cron(0 */5 * * ? *)"
+            Schedule: "cron(*/5 * * * ? *)"
             Description: "Scheduled trigger for server-flow"
             Enabled: true
     Metadata:
@@ -28,4 +28,4 @@ Outputs:
     Value: !GetAtt WorkflowFunction.Arn
   ScheduleRule:
     Description: EventBridge schedule rule
-    Value: "cron(0 */5 * * ? *)"
+    Value: "cron(*/5 * * * ? *)"
