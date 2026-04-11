@@ -231,14 +231,14 @@ wmi = ["wmi (>=1.5.1)"]
 
 [[package]]
 name = "dotflow"
-version = "0.14.0.dev1"
+version = "0.15.0.dev6"
 description = "🎲 Dotflow turns an idea into flow! Lightweight Python library for execution pipelines with retry, parallel, cron and async support."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "dotflow-0.14.0.dev1-py3-none-any.whl", hash = "sha256:20c64f6b0aae79da1716a6c62abc54b1f464a6d55706ba69c54a78b01392a3a5"},
-    {file = "dotflow-0.14.0.dev1.tar.gz", hash = "sha256:f29b9117830c686ddbcf23036a6d1818b8cd5037599dd963f402dcb711fa39e6"},
+    {file = "dotflow-0.15.0.dev6-py3-none-any.whl", hash = "sha256:827862ea86062e0814ea7f6566d74c36ecf202a2b5cf24d318dec6150db493af"},
+    {file = "dotflow-0.15.0.dev6.tar.gz", hash = "sha256:f91058d192f639ee8b8a555b8e2d85d84290d43f9a8eb3b24e4aa27f7ebd2c92"},
 ]
 
 [package.dependencies]
@@ -250,9 +250,14 @@ typing-extensions = "*"
 
 [package.extras]
 aws = ["boto3"]
+deploy-alibaba = ["alibabacloud-fc-open20210406", "alibabacloud-tea-openapi"]
+deploy-aws = ["boto3"]
+deploy-gcp = ["google-auth", "google-cloud-artifact-registry", "google-cloud-build", "google-cloud-run", "google-cloud-service-usage", "google-cloud-storage"]
+deploy-github = ["GitPython", "PyGithub"]
 gcp = ["google-cloud-storage"]
-mongodb = ["dotflow-mongodb"]
+otel = ["opentelemetry-api", "opentelemetry-sdk"]
 scheduler = ["croniter"]
+sentry = ["sentry-sdk"]
 
 [[package]]
 name = "dotflow-mongodb"
@@ -909,4 +914,4 @@ zstd = ["zstandard (>=0.18.0)"]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "fb85f90974ee02532235351f39da41f3db8af677d33348ebb16906124ea40ffa"
+content-hash = "a20bddb5fcca2aa93a0b9784051a5dc1e73760bd53e8b1d84ce28d3ba38d9d19"
