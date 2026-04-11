@@ -1,10 +1,17 @@
-[tool.poetry]
+[project]
 name = "server-flow"
 version = "0.1.0"
 description = "Server Flow — custom server provider example with dotflow"
-authors = ["FernandoCelmer <email@fernandocelmer.com>"]
-license = "MIT"
-package-mode = false
+requires-python = ">=3.12"
+dependencies = [
+    "dotflow==0.15.0.dev7",
+    "requests>=2.32.3",
+    "httpx>=0.28.1",
+    "python-dotenv>=1.1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
 
 [tool.poetry.dependencies]
 python = "^3.12"

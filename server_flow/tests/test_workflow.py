@@ -1,12 +1,15 @@
 import unittest
-from unittest.mock import patch, MagicMock
+from unittest.mock import patch
 
-from dotflow.core.dotflow import DotFlow
+from dotflow import Config, DotFlow, action
 from dotflow.core.types.status import TypeStatus
-from dotflow import Config
 
 from server_flow.server import ServerAPI
-from server_flow.actions import aggregate_results
+
+
+@action
+def simple_step(initial_context):
+    return {"status": "ok"}
 
 
 class TestServerAPI(unittest.TestCase):
@@ -19,7 +22,7 @@ class TestServerAPI(unittest.TestCase):
         mock_post.assert_called_once()
         args, kwargs = mock_post.call_args
         self.assertIn("/workflows", args[0])
-        self.assertEqual(kwargs["json"]["workflow_id"], "test-wf-id")
+        self.assertEqual(kwargs["json"]["id"], "test-wf-id")
         self.assertEqual(kwargs["headers"]["X-User-Token"], "test-token")
 
     @patch("server_flow.server.patch")
@@ -42,12 +45,7 @@ class TestWorkflow(unittest.TestCase):
         config = Config(server=server)
 
         workflow = DotFlow(config=config)
-        workflow.task.add(
-            step=aggregate_results,
-            initial_context={"results": [
-                {"url": "http://test.com", "status_code": 200, "data": {}},
-            ]},
-        )
+        workflow.task.add(step=simple_step, initial_context="test")
         workflow.start()
 
         tasks = workflow.result_task()

@@ -1,0 +1,47 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: "server-flow — scheduled dotflow pipeline on AWS Lambda"
+
+Parameters:
+  ServerBaseUrl:
+    Type: String
+    Default: ""
+    Description: dotflow-api base URL
+  ServerUserToken:
+    Type: String
+    NoEcho: true
+    Default: ""
+    Description: API token for X-User-Token authentication
+
+Resources:
+  WorkflowFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      FunctionName: server-flow
+      Timeout: 900
+      MemorySize: 512
+      Environment:
+        Variables:
+          DOTFLOW_OUTPUT_PATH: /tmp/.output
+          SERVER_BASE_URL: !Ref ServerBaseUrl
+          SERVER_USER_TOKEN: !Ref ServerUserToken
+      Events:
+        Schedule:
+          Type: Schedule
+          Properties:
+            Schedule: "rate(5 minutes)"
+            Description: "Scheduled trigger for server-flow"
+            Enabled: true
+    Metadata:
+      DockerTag: latest
+      DockerContext: .
+      Dockerfile: Dockerfile
+
+Outputs:
+  FunctionArn:
+    Description: Lambda function ARN
+    Value: !GetAtt WorkflowFunction.Arn
+  ScheduleRule:
+    Description: EventBridge schedule rule
+    Value: "rate(5 minutes)"
