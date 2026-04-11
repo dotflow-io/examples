@@ -38,7 +38,7 @@ def generate_report(previous_context):
         "results": aggregated["results"],
     }
 
-    with open("server_report.json", "w") as output_file:
+    with open("/tmp/server_report.json", "w") as output_file:
         json.dump(report, output_file, indent=2)
 
     return report
