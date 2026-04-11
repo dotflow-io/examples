@@ -1,0 +1,8 @@
+.env
+.output/
+__pycache__/
+*.pyc
+dist/
+*.egg-info/
+server_log.json
+server_report.json

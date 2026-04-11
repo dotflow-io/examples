@@ -1,16 +1,18 @@
 [tool.poetry]
-name = "examples"
+name = "server-flow"
 version = "0.1.0"
-description = ""
+description = "Server Flow — custom server provider example with dotflow"
 authors = ["FernandoCelmer <email@fernandocelmer.com>"]
 license = "MIT"
-readme = "README.md"
 package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.12"
 dotflow = {version = "0.15.0.dev6", allow-prereleases = true}
-dotflow-mongodb = "^0.1.2"
+requests = "^2.32.3"
+httpx = "^0.28.1"
+python-dotenv = "^1.1.0"
+pytest = "^8.3.5"
 
 
 [build-system]
