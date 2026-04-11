@@ -1,12 +1,15 @@
 import unittest
 from unittest.mock import patch
 
-from dotflow.core.dotflow import DotFlow
+from dotflow import Config, DotFlow, action
 from dotflow.core.types.status import TypeStatus
-from dotflow import Config
 
 from server_flow.server import ServerAPI
-from server_flow.actions import generate_report
+
+
+@action
+def simple_step(initial_context):
+    return {"status": "ok"}
 
 
 class TestServerAPI(unittest.TestCase):
@@ -42,13 +45,7 @@ class TestWorkflow(unittest.TestCase):
         config = Config(server=server)
 
         workflow = DotFlow(config=config)
-        workflow.task.add(
-            step=generate_report,
-            initial_context={
-                "total": 1,
-                "results": [{"url": "http://test.com"}],
-            },
-        )
+        workflow.task.add(step=simple_step, initial_context="test")
         workflow.start()
 
         tasks = workflow.result_task()
