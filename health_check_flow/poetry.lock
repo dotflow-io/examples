@@ -247,14 +247,14 @@ rich = "*"
 
 [[package]]
 name = "dotflow"
-version = "0.15.0.dev4"
+version = "0.15.0.dev6"
 description = "🎲 Dotflow turns an idea into flow! Lightweight Python library for execution pipelines with retry, parallel, cron and async support."
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
 files = [
-    {file = "dotflow-0.15.0.dev4-py3-none-any.whl", hash = "sha256:3281ef4f5e9aa005dc4e47107cef7eba65820a7cc180d9e284ef58fe632d289b"},
-    {file = "dotflow-0.15.0.dev4.tar.gz", hash = "sha256:73d063ab047d05058b511debf1d06dca2d963c5a48fec7fb0eba2aaa273d3ff0"},
+    {file = "dotflow-0.15.0.dev6-py3-none-any.whl", hash = "sha256:827862ea86062e0814ea7f6566d74c36ecf202a2b5cf24d318dec6150db493af"},
+    {file = "dotflow-0.15.0.dev6.tar.gz", hash = "sha256:f91058d192f639ee8b8a555b8e2d85d84290d43f9a8eb3b24e4aa27f7ebd2c92"},
 ]
 
 [package.dependencies]
@@ -266,6 +266,7 @@ typing-extensions = "*"
 
 [package.extras]
 aws = ["boto3"]
+deploy-alibaba = ["alibabacloud-fc-open20210406", "alibabacloud-tea-openapi"]
 deploy-aws = ["boto3"]
 deploy-gcp = ["google-auth", "google-cloud-artifact-registry", "google-cloud-build", "google-cloud-run", "google-cloud-service-usage", "google-cloud-storage"]
 deploy-github = ["GitPython", "PyGithub"]
@@ -855,4 +856,4 @@ zstd = ["backports-zstd (>=1.0.0) ; python_version < \"3.14\""]
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.12"
-content-hash = "82fbf21a495488c9b19612a11e02de4a55417933c38a7c9fd8fd15062ce3c473"
+content-hash = "bb26b973ba350748abc0e221b8b2b9cc756e558606d011b81a63979972478346"
