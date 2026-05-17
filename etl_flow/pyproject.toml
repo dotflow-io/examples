@@ -8,11 +8,11 @@ dependencies = [
     "requests>=2.32.3",
     "beautifulsoup4>=4.13.3",
     "pydantic>=2.10.6",
-    "python-dotenv>=1.1.0",
+    "python-dotenv>=1.2.2",
 ]
 
 [project.optional-dependencies]
-dev = ["pytest"]
+dev = ["pytest>=9.0.3"]
 
 [tool.poetry.dependencies]
 python = "^3.12"
@@ -20,8 +20,8 @@ requests = "^2.32.3"
 beautifulsoup4 = "^4.13.3"
 pydantic = "^2.10.6"
 dotflow = {version = "1.0.0", allow-prereleases = true}
-pytest = "^8.3.5"
-python-dotenv = "^1.1.0"
+pytest = "^9.0.3"
+python-dotenv = "^1.2.2"
 
 
 [build-system]
