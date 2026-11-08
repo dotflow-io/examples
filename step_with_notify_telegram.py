@@ -6,7 +6,7 @@ import time
 from dotenv import load_dotenv
 
 from dotflow import Config, DotFlow, action
-from dotflow.notify import NotifyTelegram
+from dotflow.providers import NotifyTelegram
 from dotflow.types import TypeStatus
 
 
